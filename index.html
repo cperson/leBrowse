@@ -5,6 +5,7 @@
     <title>Browser</title>
     <link rel="stylesheet" href="css/css/font-awesome.css">
     <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="https://static2.sharepointonline.com/files/fabric/office-ui-fabric-core/10.0.0/css/fabric.min.css" />
     <style>
           webview {
       width: 100%;
@@ -14,28 +15,32 @@
   </head>
   <body id="browser">
     <nav id="navigation">
-      <div id="back">
-        <i class="fa fa-arrow-left" aria-hidden="true"></i>
-      </div>
-      <div id="forward">
-        <i class="fa fa-arrow-right" aria-hidden="true"></i>
-      </div>
-      <div id="refresh">
-        <i class="fa fa-refresh" aria-hidden="true"></i>
+      <div class="leftIconContainer">
+        <div id="back">
+          <i class="fa fa-angle-left" aria-hidden="true"></i>
+        </div>
+        <div id="forward">
+          <i class="fa fa-angle-right" aria-hidden="true"></i>
+        </div>
+        <div id="refresh">
+          <i class="fa fa-refresh" aria-hidden="true"></i>
+        </div>
       </div>
       <div id="omnibox">
         <input type="text" id="url">
       </div>
-      <div id="fave">
-        <i class="fa fa-star" aria-hidden="true"></i>
-      </div>
-      <div id="fave-popup" data-state="closed">
-      </div>
-      <div id="list">
-        <i class="fa fa-list" aria-hidden="true"></i>
-      </div>
-      <div id="console">
-        <i class="fa fa-terminal" aria-hidden="true"></i>
+      <div class="rightIconContainer">
+        <div id="fave">
+          <i class="fa fa-star" aria-hidden="true"></i>
+        </div>
+        <div id="fave-popup" data-state="closed">
+        </div>
+        <div id="list">
+          <i class="fa fa-list" aria-hidden="true"></i>
+        </div>
+        <div id="console">
+          <i class="fa fa-terminal" aria-hidden="true"></i>
+        </div>
       </div>
     </nav>
     <!--<div id="tabs">
